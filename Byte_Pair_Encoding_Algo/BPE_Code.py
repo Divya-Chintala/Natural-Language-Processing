@@ -168,7 +168,7 @@ if __name__ == '__main__':
             print(f"Error: Test file '{Test_file}' does not exist in this folder.")
             sys.exit(1)
         
-        print("\nChintala, Divya Sai Sree,","A20561001 Solution: BPE Tokenizer")
+        print("\n BPE Tokenizer":)
         print("Number of merges:", k)
         print("Training file name:", Train_file)
         print("Test file name:", Test_file)
@@ -182,7 +182,7 @@ if __name__ == '__main__':
         print("\nTraining time:", end_time - start_time, "seconds")
         
         # Save the new vocab to a file
-        vocab_file = "CS585_P01_A20561001_VOCAB.txt"
+        vocab_file = "VOCAB.txt"
         with open(vocab_file, 'w') as f:
             for vocab in new_vocab:
                 f.write(f"{vocab}\n")
@@ -203,7 +203,7 @@ if __name__ == '__main__':
         # print(','.join(''.join(i) for i in cleaned_text_corpus[:20]))
         if len(cleaned_text_corpus) > 20:
             print('\nTokenized text is longer than 20 tokens....')
-        result_file = "CS585_P01_A20561001_RESULT.txt"
+        result_file = "RESULT.txt"
         with open(result_file, 'w') as f:
             f.write(','.join(''.join(i) for i in cleaned_text_corpus))
         
@@ -215,7 +215,7 @@ if __name__ == '__main__':
         #         # print(','.join(''.join(i) for i in cleaned_text_corpus))
         #         print('Tokenized text is longer than 20 tokens....')
         #         break
-        # vocab_file = "CS585_P01_A20561001_result.txt"
+        # vocab_file = "result.txt"
         # with open(vocab_file, 'w') as f:
         #     for tokens in test_corpus:
         #         # f.write(','.join(''.join(i) for i in tokens))
