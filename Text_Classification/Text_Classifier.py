@@ -45,7 +45,7 @@ from nltk.stem import WordNetLemmatizer
 
 
 #############################################################################################
-#    Unshuffled Train Test Splitting
+#    Unshuffled Train Test Split
 #############################################################################################
 
 def Unshuffle_train_test_split(df:pd.DataFrame,
